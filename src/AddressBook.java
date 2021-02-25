@@ -13,7 +13,6 @@ public class AddressBook
      * An arrayList of AddressEntry's
      */
     private ArrayList<AddressEntry> addressEntryList;
-
     /**
      * Initializes the addressBook's arrayList
      */

@@ -22,7 +22,6 @@ public class Menu  {
 
         //reads text from file
         obj.readFromFile(fileName);
-
     }
     /**
      *
@@ -70,7 +69,6 @@ public class Menu  {
         // if not there is not need to ask user for an input
         if(list.size() >= 1)
         {
-
             // get value from user of the AddressEntry they want to delete
             // do while ensures that value entered is within the range of available options
             int val;

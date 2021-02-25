@@ -23,6 +23,12 @@ public class AddressBookApplication {
         mainMenu(obj);
     }
 
+    /**
+     * This method ensures that the user has a user interface.
+     * It uses a switch statement that remains within a main menu
+     * with multiple options
+     * @param obj is an AddressBook object
+     */
     static void mainMenu(AddressBook obj)
     {
         Menu menu = new Menu();

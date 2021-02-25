@@ -3,12 +3,6 @@
  */
 public class AddressEntry implements Comparable<AddressEntry>
 {
-    // used to compare AddressEntries in order to be able to sort them
-    // in alphabetical order
-    public int compareTo(AddressEntry obj)
-    {
-        return this.getLastName().compareTo(obj.getLastName());
-    }
     /**
      * The individual's first name
      */
@@ -76,7 +70,15 @@ public class AddressEntry implements Comparable<AddressEntry>
         phone = thePhone;
         email = theEmail;
     }
-
+    /**
+     * used to compare AddressEntries in order to be able to sort them
+     * in alphabetical order
+     * @param obj any AddressEntry object within an AddressBook
+     */
+    public int compareTo(AddressEntry obj)
+    {
+        return this.getLastName().compareToIgnoreCase(obj.getLastName());
+    }
     /**
      * Formats the individuals information properly, ready to be printed
      * @return a String containing the individuals information well formatted
